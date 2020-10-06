@@ -1,0 +1,29 @@
+{
+  "name": "bdd-faker-mysql-cluster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mrocha98/bdd-faker-mysql-cluster.git",
+  "author": "Matheus Rocha <matheus_rocha98@outlook.com>",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "start": "node dist/src",
+    "start:dev": "tsnd --transpile-only --ignore-watch node_modules --respawn --no-notify src"
+  },
+  "dependencies": {
+    "faker": "^5.1.0",
+    "mysql2": "^2.2.5",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^4.0.3"
+  }
+}
