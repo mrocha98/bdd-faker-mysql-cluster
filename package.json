@@ -6,7 +6,9 @@
   "author": "Matheus Rocha <matheus_rocha98@outlook.com>",
   "license": "BSD-3-Clause",
   "scripts": {
-    "start": "node dist/src",
+    "build": "yarn tsc",
+    "prestart": "yarn build",
+    "start": "node dist",
     "start:dev": "tsnd --transpile-only --ignore-watch node_modules --respawn --no-notify src"
   },
   "dependencies": {
