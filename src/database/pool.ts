@@ -1,5 +1,5 @@
 import mysql from 'mysql2'
 
-const pool = (database: string) => mysql.createPool({ user: 'root', database })
+const pool = mysql.createPool({ user: 'root', database: 'bdd' })
 
 export default pool

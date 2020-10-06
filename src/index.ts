@@ -1,15 +1,6 @@
-import pool from './database/pool'
-import AlunoEntity from './entities/aluno'
+import { questionInt } from 'readline-sync'
+import AlunoService from './services/AlunoService'
 
-pool('bdd').getConnection((_, connection) => {
-  Array.from({ length: 15 }, () => connection.query(new AlunoEntity().getInsertQuery(), (error, results) => {
-    if (error) {
-      console.log(error)
-      throw error
-    }
+const quantity = questionInt('How many rows do you want to insert ? ')
 
-    console.log({ results })
-
-    connection.release()
-  }))
-})
+AlunoService.insert(quantity)
