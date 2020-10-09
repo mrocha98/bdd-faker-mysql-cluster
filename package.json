@@ -9,7 +9,7 @@
     "build": "yarn tsc",
     "prestart": "yarn build",
     "start": "node dist",
-    "start:dev": "tsnd --transpile-only --ignore-watch node_modules --respawn --no-notify src"
+    "start:dev": "NODE_ENV=development tsnd --transpile-only --ignore-watch node_modules --respawn --no-notify src"
   },
   "dependencies": {
     "consola": "^2.15.0",
