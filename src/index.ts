@@ -1,6 +1,8 @@
 import { questionInt } from 'readline-sync'
-import AlunoService from './services/AlunoService'
+import { AlunoController } from './aluno'
 
 const quantity = questionInt('How many rows do you want to insert ? ')
 
-AlunoService.insert(quantity)
+;(async () => {
+  await AlunoController.insertMultiple(quantity)
+})()
